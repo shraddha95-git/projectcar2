@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Welcome To Outlet Charges Prediction System </title>
+<head>
+    <body style="background-color: rgb(160, 177, 194);">
+        
+    <h1> Welcome To Outlet Charges Prediction System </h1>
+    
+    <form method="GET" action ="/predict_charges">
+    
+                <label>Item_Weight:</label>
+                <input type = "text" name = "Item_Weight">
+                </select>
+    
+                <br>
+                <br>
+    
+                <label>Item_Fat_Content:</label>
+                <select name = "Item_Fat_Content">
+    
+                    <option value = "Low Fat">Low Fat</option>
+                    <option value = "Regular">Regular</option>
+                </select>
+    
+                <br>
+                <br>
+
+                <label>Item_Visibility:</label>
+            <input type = "text" name = "Item_Visibility">
+            </select>
+
+
+            <br>
+            <br>
+
+            <label>Item_MRP:</label>
+            <input type = "text" name = "Item_MRP">
+            </select>
+
+
+            <br>
+            <br>
+
+            <label>Outlet_Establishment_Year:</label>
+            <input type = "text" name = "Outlet_Establishment_Year">
+            </select>
+
+
+            <br>
+            <br>
+
+            <label>Outlet_Size:</label>
+            <label>Medium:</label> <input type = "radio" name="Outlet_Size" value = "Medium">
+            <label>High:</label> <input type = "radio" name="Outlet_Size" value = "High">
+            <label>Small:</label> <input type = "radio" name="Outlet_Size" value = "Small">
+
+            </select>
+
+            <br>
+            <br>
+
+            <label>Outlet_Location_Type:</label>
+            <label>Tier 1:</label> <input type = "radio" name="Outlet_Location_Type" value = "Tier 1">
+            <label>Tier 2:</label> <input type = "radio" name="Outlet_Location_Type" value = "Tier 2">
+            <label>Tier 3:</label> <input type = "radio" name="Outlet_Location_Type" value = "Tier 3">
+
+            </select>
+
+            <br>
+            <br>
+
+            <label> Outlet_Type: </label>
+            <label for = "Outlet_Type">
+                    <select name = "Outlet_Type" >
+                    <option value = "Supermarket Type1">Supermarket Type1</option>
+                    <option value = "Supermarket Type2">Supermarket Type2</option>
+                    <option value = "Grocery Store">Grocery Store</option>
+                    <option value = "Supermarket Type3">Supermarket Type3</option>
+            </select>
+
+            <br>
+            <br>
+
+            <label> Item_Type: </label>
+            <label for = "Item_Type">
+            <select name = "Item_Type" id="Item_Type">
+                    <option value = "Baking Goods">Baking Goods</option>
+                    <option value = "Breads">Breads</option>
+                    <option value = "Breakfast">Breakfast</option>
+                    <option value = "Canned">Canned</option>
+                    <option value = "Dairy">Dairy</option>
+                    <option value = "Frozen Foods">Frozen Foods</option>
+                    <option value = "Fruits and Vegetables">Fruits and Vegetables</option>
+                    <option value = "Hard Drinks">Hard Drinks</option>
+                    <option value = "Health and Hygiene">Health and Hygiene</option>
+                    <option value = "Household">Household</option>
+                    <option value = "Meat">Meat</option>
+                    <option value = "Others">Others</option>
+                    <option value = "Seafood">Seafood</option>
+                    <option value = "Snack Foods">Snack Foods</option>
+                    <option value = "Soft Drinks">Soft Drinks</option>
+                    <option value = "Starchy Foods">Starchy Foods</option>
+            </select>
+
+            <br>
+            <br>
+
+
+            <label> Outlet_Identifier: </label>
+            <label for = "Outlet_Identifier">
+            <select name = "Outlet_Identifier" id="Outlet_Identifier">
+                    <option value = "OUT010">OUT010</option>
+                    <option value = "OUT013">OUT013</option>
+                    <option value = "OUT017">OUT017</option>
+                    <option value = "OUT018">OUT018</option>
+                    <option value = "OUT019">OUT019</option>
+                    <option value = "OUT027">OUT027</option>
+                    <option value = "OUT035">OUT035</option>
+                    <option value = "OUT045">OUT045</option>
+                    <option value = "OUT046">OUT046</option>
+                    <option value = "OUT049">OUT049</option>
+                    
+            </select>
+            
+
+            <br>
+            <br>
+
+            
+            <input type = "submit" value = "SUBMIT">
+
+            <br>
+            <p> Product price will be <b>{{ prediction }} /- Rs.</b> Only. </p>
+
+        </form>
+
+
+</body>
+
+
+
+
+
+
+            
+
